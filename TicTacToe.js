@@ -7,15 +7,25 @@ let player1 = 'X';
 let player2 = 'O';
 let currentPlayer = 'X';
 let gameBoard = document.querySelector('.gameBoard')
-
+let playerTurn = "null"
 function switchPlayer(){
-    if ( currentPlayer == 'X'){
-        currentPlayer = 'O'
+    if ( playerTurn == 0){
+        playerTurn = 1
     }
     else{
-        currentPlayer = 'X'
+        playerTurn = 0
     }
 }
+
+function playerTurn(){
+    if ( playerTurn == "X") {
+        currentPlayer = "O"
+    }
+    else{
+        playerTurn = "X"
+    }
+    }
+
 
     gameBoard.addEventListener('click', function(event){
         if (event.target.innerHTML == ''){
