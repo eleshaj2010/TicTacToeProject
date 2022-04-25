@@ -41,6 +41,18 @@ const whoWon = () => `Player ${currentPlayer} wins the game !`;
 
 const currentTurn = () => `Player ${currentPlayer} its your turn !`;
 
+let Name= document.querySelectorAll("Name1", "Name2");
+
+    let display= document.querySelectorAll("displayName1", "displayName2");
+
+
+function playerName1() {
+    document.write(onclick, "Name1","Name2");
+    
+}
+
+submit.addEventListener("click",playerName1);
+
 const whosTurn = gameState.innerHTML;
 
 function usedCell(clickedCell, placeNumber){
